@@ -15,7 +15,11 @@ When the power board reports a main-lamp failure, the intended control sequence 
 - Two 10-segment LED bar graphs and four discrete status LEDs, arranged in three multiplexed groups.
 - Six-pin AVR ISP programming connector.
 
-Firmware is not included in this documentation package.
+## My Contribution
+
+This project is based on a board design created before my involvement. I transferred the existing design to **Altium Designer** and prepared the schematic, PCB layout, component libraries, bill of materials, and engineering documentation.
+
+My work included component selection, standardizing schematic symbols and footprints, clarifying component parameters, and aligning the schematic, PCB, and documentation. I also **personally assembled and soldered the board**.
 
 ## Block Diagram
 
@@ -29,7 +33,7 @@ The keypad and IR receiver provide user input to the microcontroller. The contro
 
 VT1 and VT2 condition the Break T1 and Break T2 feedback signals before they reach PC0 and PC1. VT3 and VT4 interface the microcontroller outputs to Control T1 and Control T2. VD1 and VD2 provide diode-clamp networks on the output-control lines.
 
-The indication circuit shares eight cathode lines through R17–R24 and selects three anode groups using VT5–VT7. This permits multiplexed operation of the two bar graphs and four status LEDs. Display patterns and refresh timing are defined by firmware.
+The indication circuit shares eight cathode lines through R17–R24 and selects three anode groups using VT5–VT7. This permits multiplexed operation of the two bar graphs and four status LEDs. The microcontroller controls the display patterns and multiplexing sequence.
 
 ### Connections
 
@@ -70,13 +74,15 @@ The indication circuit shares eight cathode lines through R17–R24 and selects 
 
 Two-layer PCB with surface-mount control circuitry and through-hole connectors, indicators, IR receiver, and crystal.
 
-## Assembled Board
+## Assembled Board and Test Bench
 
-> Real PCB / test-bench photograph will be added here.
+[![Assembled control board with illuminated indicators on the stand](hardware/images/test-bench.jpg)](hardware/images/test-bench.jpg)
 
-<!-- Replace the placeholder above when the photograph is available:
-![Assembled control board](hardware/images/pcb-real.jpg)
--->
+The photograph shows the assembled control board in the foreground, with the power board mounted behind it. The illuminated LED bar graphs and status indicators show the panel operating on the demonstration stand. The keypad is connected by a separate cable.
+
+### Hardware and Documentation Versions
+
+The photographs show hardware that I assembled and soldered. Some photographed boards are earlier versions and may differ from the published Altium files in component placement, markings, or implementation details. The Altium files and engineering documents describe the version prepared during my work on the project.
 
 ## Bill of Materials
 
