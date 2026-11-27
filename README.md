@@ -76,7 +76,7 @@ Two-layer PCB with surface-mount control circuitry and through-hole connectors, 
 
 ## Assembled Board and Test Bench
 
-[![Assembled control board with illuminated indicators on the stand](hardware/images/test-bench.jpg)](hardware/images/test-bench.jpg)
+[![Assembled control board with illuminated indicators on the stand](hardware/images/control-board_pcb-real.jpg)](hardware/images/control-board_pcb-real.jpg)
 
 The photograph shows the assembled control board in the foreground, with the power board mounted behind it. The illuminated LED bar graphs and status indicators show the panel operating on the demonstration stand. The keypad is connected by a separate cable.
 
